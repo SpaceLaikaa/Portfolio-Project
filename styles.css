@@ -1,0 +1,78 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    min-height: 2000px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Styles */
+
+#navbar {
+    background-color: #be3144;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+
+}
+
+li.nav-links {
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+
+#navbar a, #navbar ul li {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    height: 60px;
+    width: 140px;
+}
+
+
+ul.nav-links-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    margin-right: 20px;
+    font-size: 1.6rem;    
+    margin-right: 30px; 
+    text-align: center;   
+}
+
+li.nav-links a {
+    display: flex;
+    align-items: center;      
+    justify-content: center;   
+    height: 100%;
+    width: 140px;
+    color: #fff;
+    text-decoration: none;
+}
+
+li.nav-links:hover {
+    background-color: #45567d;
+}
+
+/* Header Styles */
+#welcome-section {
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
