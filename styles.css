@@ -110,7 +110,7 @@ li.nav-links:hover {
 h1#project-h1 {
     border-bottom: 2px solid #fff;
     padding-bottom: 8px;
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: #fff;
 }
 
@@ -122,18 +122,41 @@ h1#project-h1 {
 .project-paragraphs {
     background-color: #303841;
     width: 400px;
-    height: 50px;
+    height: 70px;
     text-align: center;
     color: #fff;
     display: flex;
     align-items: center;    
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
-.project-paragraphs:hover:before {
-content: "<";
+.oneofthem .project-paragraphs::before,
+.oneofthem .project-paragraphs::after {
+    content: ""; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    transform: translateX(0);
 }
+
+
+.oneofthem:hover .project-paragraphs::before {
+    content: "<";
+    transform: translateX(-10px);
+    transition: 0.5s;   
+    opacity: 1; 
+    color: orange;
+}
+
+.oneofthem:hover .project-paragraphs::after {
+    content: " />";
+    color: orange;
+    transform: translateX(10px);
+    transition: 0.5s;  
+     opacity: 1;
+     margin-left: 2px;
+}
+
 
 .projects-container {
     display: flex;
@@ -151,5 +174,10 @@ content: "<";
 .container-two {
     display: flex;
     gap: 40px;
-   
+   margin-top: 30px;
+}
+
+.oneofthem {
+    display: flex;
+    flex-direction: column;
 }
