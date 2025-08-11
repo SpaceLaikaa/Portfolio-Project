@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 2800px;
+    height: 2760px;
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -253,4 +253,24 @@ h1#project-h1 {
         .social-links a:hover {
             transform: translateY(-5px); 
             background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Footer Styles */
+         footer {
+            border-top: 3px solid #be3144;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            text-align: center;
+            flex-wrap: wrap;
+            background-color: #303841;
+            color: #fff;    
+            height: 140px;
+        }
+
+        footer p {
+            margin: 8px;
         }
