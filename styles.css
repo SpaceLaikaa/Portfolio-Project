@@ -1,5 +1,5 @@
 /* Global Styles */
-
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@
 }
 
 body {
-    min-height: 3000px;
-    font-family: 'Poppins', sans-serif;; 
+    height: 2800px;
+    font-family: 'Poppins', sans-serif; 
 }
 
 html {
@@ -104,7 +104,7 @@ li.nav-links:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 h1#project-h1 {
@@ -209,3 +209,48 @@ h1#project-h1 {
     transition  : 0.5s;
 }
 
+/* Contact Styles */
+
+#contact {
+            text-align: center;
+            padding: 30px 50px;
+            width: 100%;
+            background-color: #303841;
+            color: #fff;
+        }
+
+        #contact h2 {
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+        }
+        
+        #contact p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            color: #fff ;
+            
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px); 
+            background-color: rgba(255, 255, 255, 0.1);
+        }
